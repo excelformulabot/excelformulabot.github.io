@@ -1,0 +1,42 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Formula Bot - Sign In</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <style>
+      body {
+        align-items: center;
+        background: #f5f3ef;
+        color: #1a1a1a;
+        display: flex;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        justify-content: center;
+        margin: 0;
+        min-height: 100vh;
+      }
+    </style>
+  </head>
+  <body>
+    <p>Opening Google...</p>
+    <script>
+      (function () {
+        var googleAuthUrl = new URL("https://analytics.formulabot.com/addon-auth/google");
+        googleAuthUrl.searchParams.set("return_to", "https://excelformulabot.github.io/addon-auth-complete.html");
+
+        function redirectToGoogle() {
+          window.location.replace(googleAuthUrl.toString());
+        }
+
+        if (window.Office && Office.onReady) {
+          Office.onReady(redirectToGoogle);
+        } else {
+          redirectToGoogle();
+        }
+
+        setTimeout(redirectToGoogle, 1500);
+      })();
+    </script>
+  </body>
+</html>

@@ -1,0 +1,67 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge" />
+    <title>Formula Bot - Sign In</title>
+    <script src="https://appsforoffice.microsoft.com/lib/1.1/hosted/office.js"></script>
+    <style>
+      body {
+        align-items: center;
+        background: #f5f3ef;
+        color: #1a1a1a;
+        display: flex;
+        font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        justify-content: center;
+        margin: 0;
+        min-height: 100vh;
+      }
+      .message {
+        padding: 2rem;
+        text-align: center;
+      }
+      .success {
+        color: #16a34a;
+      }
+      .error {
+        color: #dc2626;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="message" id="addon-auth-status">
+      <p>Completing sign in...</p>
+    </div>
+    <script>
+      Office.onReady(function () {
+        var hash = window.location.hash.substring(1);
+        var statusEl = document.getElementById("addon-auth-status");
+
+        function sendMessage(message) {
+          Office.context.ui.messageParent(JSON.stringify(message));
+        }
+
+        if (hash.indexOf("error=") === 0) {
+          statusEl.innerHTML = '<p class="error">Sign in failed. Please close this window and try again.</p>';
+          sendMessage({ status: "error", message: hash.substring(6) || "auth_failed" });
+          return;
+        }
+
+        if (hash.indexOf("data=") === 0) {
+          try {
+            var data = decodeURIComponent(hash.substring(5));
+            Office.context.ui.messageParent(data);
+            statusEl.innerHTML = '<p class="success">Signed in successfully! This window will close.</p>';
+          } catch (e) {
+            statusEl.innerHTML = '<p class="error">Sign in failed. Please close this window and try again.</p>';
+            sendMessage({ status: "error", message: "parse_failed" });
+          }
+          return;
+        }
+
+        statusEl.innerHTML = '<p class="error">Sign in failed. Please close this window and try again.</p>';
+        sendMessage({ status: "error", message: "missing_auth_payload" });
+      });
+    </script>
+  </body>
+</html>
