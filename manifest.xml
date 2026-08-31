@@ -1,15 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <OfficeApp xmlns="http://schemas.microsoft.com/office/appforoffice/1.1" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:bt="http://schemas.microsoft.com/office/officeappbasictypes/1.0" xmlns:ov="http://schemas.microsoft.com/office/taskpaneappversionoverrides" xsi:type="TaskPaneApp">
   <Id>af1bca95-f5d2-433a-8cd8-f6234fe8c518</Id>
-  <Version>6.2.0.0</Version>
-  <ProviderName>Formula Bot (Datasetmatch LLC)</ProviderName>
+  <Version>7.0.0.0</Version>
+  <ProviderName>Better Analyst (Datasetmatch LLC)</ProviderName>
   <DefaultLocale>en-US</DefaultLocale>
-  <DisplayName DefaultValue="Formula Bot | AI Formula Generation and Data Automation"/>
-  <Description DefaultValue="Formula Bot | AI Formula Generation and Data Automation"/>
+  <DisplayName DefaultValue="Better Analyst | AI Formula Generation and Data Automation"/>
+  <Description DefaultValue="Better Analyst | AI Formula Generation and Data Automation"/>
   <IconUrl DefaultValue="https://excelformulabot.github.io/assets/icon-32.png"/>
   <HighResolutionIconUrl DefaultValue="https://excelformulabot.github.io/assets/icon-64.png"/>
-  <SupportUrl DefaultValue="https://formulabot.com"/>
+  <SupportUrl DefaultValue="https://betteranalyst.com"/>
   <AppDomains>
+    <AppDomain>https://betteranalyst.com</AppDomain>
+    <AppDomain>https://www.betteranalyst.com</AppDomain>
+    <AppDomain>https://app.betteranalyst.com</AppDomain>
     <AppDomain>https://www.formulabot.com</AppDomain>
     <AppDomain>https://analytics.formulabot.com</AppDomain>
   </AppDomains>
@@ -96,14 +99,14 @@
         <bt:Url id="Taskpane.Url" DefaultValue="https://excelformulabot.github.io/taskpane.html"/>
       </bt:Urls>
       <bt:ShortStrings>
-        <bt:String id="Functions.Namespace" DefaultValue="FORMULABOT"/>
-        <bt:String id="GetStarted.Title" DefaultValue="Show Formula Bot" />
-        <bt:String id="CommandsGroup.Label" DefaultValue="Formula Bot" />
-        <bt:String id="TaskpaneButton.Label" DefaultValue="Show Formula Bot" />
+        <bt:String id="Functions.Namespace" DefaultValue="BETTERANALYST"/>
+        <bt:String id="GetStarted.Title" DefaultValue="Show Better Analyst" />
+        <bt:String id="CommandsGroup.Label" DefaultValue="Better Analyst" />
+        <bt:String id="TaskpaneButton.Label" DefaultValue="Show Better Analyst" />
       </bt:ShortStrings>
       <bt:LongStrings>
-        <bt:String id="GetStarted.Description" DefaultValue="Your add-in loaded succesfully. Go to the HOME tab and click the 'Show Taskpane' button to get started." />
-        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Click to Show a Taskpane" />
+        <bt:String id="GetStarted.Description" DefaultValue="Better Analyst loaded successfully. Go to the HOME tab and click the 'Show Better Analyst' button to get started." />
+        <bt:String id="TaskpaneButton.Tooltip" DefaultValue="Open the Better Analyst task pane" />
       </bt:LongStrings>
     </Resources>
   </VersionOverrides>

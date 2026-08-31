@@ -1,8 +1,8 @@
 {
     "functions": [
         {
-            "description": "=FORMULABOT.CLASSIFY(cell_to_classify_type, cell_to_classify, cell_to_classify_based_on, option1, option2,...)\nEx:=FORMULABOT.CLASSIFY(\"Company\",A1,\"Industry\",\"Tech\",\"Retail\")",
-            "helpUrl": "http://www.formulabot.com.com/features/classify",
+            "description": "=BETTERANALYST.CLASSIFY(cell_to_classify_type, cell_to_classify, cell_to_classify_based_on, option1, option2,...)\nEx:=BETTERANALYST.CLASSIFY(\"Company\",A1,\"Industry\",\"Tech\",\"Retail\")",
+            "helpUrl": "https://betteranalyst.com/docs/get-started/welcome",
             "id": "CLASSIFY",
             "name": "CLASSIFY",
             "parameters": [
@@ -34,8 +34,8 @@
             }
         },
         {
-            "description": "=FORMULABOT.EXTRACT(cell_to_extract_info, info_to_extract)\nEx: =FORMULABOT.EXTRACT(F1,\"company name\")",
-            "helpUrl": "http://www.formulabot.com.com/features/extract",
+            "description": "=BETTERANALYST.EXTRACT(cell_to_extract_info, info_to_extract)\nEx: =BETTERANALYST.EXTRACT(F1,\"company name\")",
+            "helpUrl": "https://betteranalyst.com/docs/get-started/welcome",
             "id": "EXTRACT",
             "name": "EXTRACT",
             "parameters": [
@@ -55,8 +55,8 @@
             }
         },
         {
-            "description": "=FORMULABOT.SENTIMENT(cell_to_analyze_sentiment, option1, option2,...)\nEx: =FORMULABOT.SENTIMENT(F1,\"positive\",\"negative\",\"neutral\")",
-            "helpUrl": "http://www.formulabot.com.com/features/sentiment-analysis",
+            "description": "=BETTERANALYST.SENTIMENT(cell_to_analyze_sentiment, option1, option2,...)\nEx: =BETTERANALYST.SENTIMENT(F1,\"positive\",\"negative\",\"neutral\")",
+            "helpUrl": "https://betteranalyst.com/docs/get-started/welcome",
             "id": "SENTIMENT",
             "name": "SENTIMENT",
             "parameters": [
@@ -78,8 +78,8 @@
             }
         },
         {
-            "description": "=FORMULABOT.INFO(cell_to_get_info, info_request)\nEx: =FORMULABOT.INFO(F1,\"tallest building\")",
-            "helpUrl": "http://www.formulabot.com.com/features/retrieve-information",
+            "description": "=BETTERANALYST.INFO(cell_to_get_info, info_request)\nEx: =BETTERANALYST.INFO(F1,\"tallest building\")",
+            "helpUrl": "https://betteranalyst.com/docs/get-started/welcome",
             "id": "INFO",
             "name": "INFO",
             "parameters": [
@@ -101,8 +101,8 @@
             }
         },
         {
-            "description": "=FORMULABOT.FREEFORM(input_any_info)\nEx: =FORMULABOT.FREEFORM( “Write me a thank you note to ”, B10 ,“for gifting me a”, C10)",
-            "helpUrl": "http://www.formulabot.com.com/features/freeform",
+            "description": "=BETTERANALYST.FREEFORM(input_any_info)\nEx: =BETTERANALYST.FREEFORM( “Write me a thank you note to ”, B10 ,“for gifting me a”, C10)",
+            "helpUrl": "https://betteranalyst.com/docs/get-started/welcome",
             "id": "FREEFORM",
             "name": "FREEFORM",
             "parameters": [
@@ -119,8 +119,8 @@
             }
         },
         {
-            "description": "=FORMULABOT.INFER(input_examples, output_examples, input_to_predict)\nEx: =FORMULABOT.INFER(A1:A5,B1:B5,A6)",
-            "helpUrl": "http://www.formulabot.com.com/features/inference",
+            "description": "=BETTERANALYST.INFER(input_examples, output_examples, input_to_predict)\nEx: =BETTERANALYST.INFER(A1:A5,B1:B5,A6)",
+            "helpUrl": "https://betteranalyst.com/docs/get-started/welcome",
             "id": "INFER",
             "name": "INFER",
             "parameters": [
